@@ -19,5 +19,7 @@ variable "subnet_zone" {
 }
 
 variable "main_vpc_name" {
+}
 
+variable "my_public_ip" {
 }
