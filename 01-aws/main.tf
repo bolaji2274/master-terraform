@@ -97,6 +97,6 @@ resource "aws_instance" "my_vm" {
   key_name = aws_key_pair.test_ssh_key.key_name
 
   tags = {
-    "Name" = "My EC2 instance - Amazon Linux 2"
+    "Name" = "My EC2 AMi image instance - Amazon Linux 2"
   }
 }
