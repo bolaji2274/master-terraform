@@ -23,3 +23,7 @@ variable "main_vpc_name" {
 
 variable "my_public_ip" {
 }
+
+variable "ssh_public_key" {
+  
+}
