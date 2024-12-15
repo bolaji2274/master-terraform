@@ -28,3 +28,6 @@ variable "ssh_public_key" {
   
 }
 
+variable "aws_image" {
+  
+}
