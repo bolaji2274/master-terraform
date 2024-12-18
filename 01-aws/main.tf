@@ -87,6 +87,15 @@ resource "aws_key_pair" "test_ssh_key" {
   public_key = file(var.ssh_public_key)
 }
 
+data "aws_ami" "latest_amazon_linux2" {
+  owners = ["amazon"]
+  most_recent = true
+  filter {
+    name = "name"
+    values = [ "" ]
+  }
+}
+
 resource "aws_instance" "my_vm" {
   ami = "ami-0453ec754f44f9a4a"
   instance_type = "t2.micro"
