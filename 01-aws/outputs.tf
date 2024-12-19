@@ -12,3 +12,8 @@ output "aws_ami" {
     description = "The ami instance image"
     value = aws_instance.my_vm.ami
 }
+
+output "ec2_private_ip" {
+    description = "The private IP of the EC2 instance"
+    value = aws_instance.my_vm.private_ip
+}
